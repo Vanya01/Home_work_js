@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js_two</title>
+</head>
+<body style="background-color: beige;">
+
+<style>
+    .lists_top{
+        color: darkblue;
+        margin-left: 45%;
+        margin-top: 2%;
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 20px;
+    }
+    .person_top{
+        margin-top: 5%;
+        color:darkblue;
+    }
+    .person_top img{
+        margin-left: 40%;
+        max-height: 350px;
+        max-width: 350px;
+    }
+    .person_top p{
+        margin-left: 42%;
+        margin-top: 2%;
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .bart_block p{
+        font-weight: bold;
+        color: crimson;
+        font-size: medium;
+        max-width: 40%;
+        margin-left: 30%;
+        line-height: 22px;
+    }
+    .bart_block h2{
+        margin-left: 44%;
+        margin-top: 5%;
+        color: crimson;
+    }
+    .bart_block img{
+        margin-left: 45%;
+        margin-top: 5%;
+    }
+    .Homer_block{
+        display: flex;
+    }
+    .Homer_block h2{
+        color: blue;
+        font-weight:bold;
+        margin-left: 45%;
+        position: absolute;
+        margin-top: 10%;
+    }
+
+    .Homer_block p{
+        color: cornflowerblue;
+        font-size: 23px;
+        margin-top: 15%;
+        max-width: 80%;
+    }
+
+    .Homer_block img {
+        padding: 100px 40px 0 80px;
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    .marge_block{
+        display: flex;
+        margin-top: 10%;
+    }
+    .marge_block h2{
+        color: mediumspringgreen;
+        font-weight:bold;
+        margin-left: 45%;
+        position: absolute;
+    }
+    .marge_block p{
+        color: limegreen;
+        font-size: 23px;
+        margin-top: 80px;
+        max-width: 80%;
+    }
+    .marge_block img{
+        max-height: 400px;
+        max-width: 300px;
+    }
+
+
+
+    .lisa_block{
+        display: flex;
+        margin-top: 10%;
+    }
+    .lisa_block h2{
+        color: hotpink;
+        font-weight:bold;
+        margin-left: 45%;
+        position: absolute;
+    }
+    .lisa_block p{
+        color: deeppink;
+        font-size: 23px;
+        margin-top: 80px;
+        max-width: 80%;
+        margin-left: 3%;
+    }
+    .lisa_block img{
+        max-height: 300px;
+        max-width: 300px;
+        margin-left: 30px;
+    }
+
+
+    .meggie_block{
+        display: flex;
+        margin-top: 10%;
+    }
+    .meggie_block h2{
+        color:coral;
+        font-weight:bold;
+        margin-left: 45%;
+        position: absolute;
+    }
+    .meggie_block p{
+        color: gold;
+        font-size: 23px;
+        margin-top: 80px;
+        max-width: 80%;
+        margin-left: 3%;
+    }
+    .meggie_block img{
+        max-height: 300px;
+        max-width: 300px;
+        margin-left: 30px;
+    }
+
+
+
+
+    /*    last exe */
+    .wrap_last{
+        border-top: 10px dashed azure;
+        margin: 200px 0 200px 0;
+    }
+    .wrap_for_last{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .product-image{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .product-card h3{
+        color: limegreen;
+        margin-left: 30%;
+    }
+
+
+
+</style>
+
+
+<script>
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+    document.write(`<h2 style="color: blue; margin-left: 45%;">ListOfItems</h2>
+<ul class="lists_top">
+                    <li>${listOfItems[0]}</li>
+                    <li>${listOfItems[1]}</li>
+                    <li>${listOfItems[2]}</li>
+                    <li>${listOfItems[3]}</li>
+                    <li>${listOfItems[4]}</li>
+                    <li>${listOfItems[5]}</li>
+                    <li>${listOfItems[6]}</li>
+                    <li>${listOfItems[7]}</li>
+                   </ul>`)
+</script>
+
+<!-- second exe -->
+
+
+<script>
+
+    let simpsons = [
+        { name: 'Bart',
+            surname: 'Simpson',
+            age: 10,
+            info: 'Бартолом\'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.',
+            photo: 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'
+        },
+
+        {
+            name: 'Homer',
+            surname: 'Simpson',
+            age: 40 + 'y.o',
+            info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
+            photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+        },
+
+
+        {
+            name: 'Marge',
+            surname: 'Simpson',
+            age: 38,
+            info: 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.',
+            photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'
+        },
+
+
+        {
+            name: 'Lisa',
+            surname: 'Simpson',
+            age: 9,
+            info: 'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.',
+            photo: 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'
+        },
+
+        { name: 'Maggie',
+            surname: 'Simpson',
+            age: 1,
+            info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
+            photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
+        },
+    ];
+
+    document.write(` <div class="bart_block">
+ <img src="https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png" alt="BART">
+
+<h2>
+${simpsons[0].name}
+${simpsons[0].surname}
+${simpsons[0].age}</h2>
+<p>${simpsons[0].info}</p>
+
+ </div>
+
+<div class="Homer_block">
+<img src="http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" alt="Homer">
+<h2>
+${simpsons[1].name}
+${simpsons[1].surname}
+${simpsons[1].age}</h2>
+<p>${simpsons[1].info}</p>
+
+</div>
+
+<div class="marge_block">
+   <img src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png" alt="Marge">
+<h2>
+${simpsons[2].name}
+${simpsons[2].surname}
+${simpsons[2].age}</h2>
+<p>${simpsons[2].info}</p>
+
+</div>
+
+<div class="lisa_block">
+   <img src="https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png" alt="Lisa">
+<h2>
+${simpsons[3].name}
+${simpsons[3].surname}
+${simpsons[3].age}</h2>
+<p>${simpsons[3].info}</p>
+
+</div>
+
+<div class="meggie_block">
+   <img src="https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png" alt="Meggie">
+<h2>
+${simpsons[4].name}
+${simpsons[4].surname}
+${simpsons[4].age}</h2>
+<p>${simpsons[4].info}</p>
+
+</div>
+
+`)
+
+
+
+
+
+    //     last task
+</script>
+
+
+<script>
+
+    let products = [
+        {
+            title: 'Milk',
+            price: 22,
+            image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+        },
+        {
+            title: 'Juice',
+            price: 27,
+            image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+        },
+        {
+            title: 'Tomato',
+            price: 47,
+            image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+        },
+        {
+            title: 'Tea',
+            price: 15,
+            image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+        },
+    ];
+
+
+
+    document.write(`<div class="wrap_last">
+      <div class="wrap_for_last">
+              <div class="product-card">
+                  <h3 class="product-title">${products[0].title} ${products[0].price} </h3>
+                  <img src="https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg" alt="milk" class="product-image">
+              </div>
+
+              <div class="product-card">
+                  <h3 class="product-title">${products[1].title} ${products[1].price} </h3>
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg" alt="juice" class="product-image">
+              </div>
+
+               <div class="product-card">
+                  <h3 class="product-title">${products[2].title} ${products[2].price} </h3>
+                  <img src="https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74" alt="Tomato" class="product-image">
+              </div>
+
+              <div class="product-card">
+                  <h3 class="product-title">${products[3].title} ${products[3].price} </h3>
+                  <img src="https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png" alt="Tea" class="product-image">
+              </div>
+
+          </div>
+</div>
+</div>`);
+</script>
+</body>
+</html>
